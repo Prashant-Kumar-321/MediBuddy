@@ -11,9 +11,24 @@
 </head>
 <body class="px-16 pt-5">
     <header class="flex row justify-between items-center px-8 py-6">
-        <div aria-label="logo">Logo</div>
-        <nav aria-label="navigation-menu">Navigation menu</nav>
-        <div aria-label="call to action">Register</div>
+        <div aria-label="logo" class="font-bold text-3xl text-primary transition duration-200 ease-in-out hover:text-light-primary select-none">
+            <a href="#">MEDIBuddy</a>
+        </div>
+        <nav aria-label="navigation-menu">
+            <ul class="flex flex-row items-center space-x-7 text-light-gray nav-menu nav-menu-hover">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div aria-label="call to action" class="select-none">
+            <a styles="color: #28bf96" href="#">
+                <button type="button" class="bg-primary px-5 py-3 rounded-lg text-white transition duration-200 ease-in-out hover:bg-light-primary">Register Now</button>
+            </a>
+        </div>
     </header>
 </body>
 </html>
