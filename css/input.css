@@ -4,19 +4,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
 
+[x-cloak]{
+    display: none !important; 
+}
+
 
 .nav-menu>li>a{
     @apply 
-        text-xl font-light
-        px-3 pb-0.5 relative 
+        text-lg font-light
+        xl:px-3 px-1 pb-0.5 relative 
         select-none font-poppins
 }
 
 .nav-menu-hover>li>a{
-    @apply hover:text-primary
+    @apply lg:hover:text-primary
         after:content-[''] after:w-full after:h-0.5 
-        after:absolute after:bottom-0 after:left-0 
-        after:bg-primary 
+        after:absolute after:bottom-0 after:left-0
+        after:bg-white 
+        lg:after:bg-primary 
         after:origin-left after:scale-x-0 hover:after:scale-x-100
-        after:transition after:duration-300 
+        after:transition after:duration-300;
 }
