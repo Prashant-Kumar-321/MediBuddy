@@ -33,6 +33,7 @@
             <div 
                 class="lg:hidden h-12 w-12 rounded-full flex justify-center items-center bg-extralight-primary text-2xl sm:text-3xl text-primary cursor-pointer"
                 @click="navbarOpen = !navbarOpen"
+                @click.outside="navbarOpen=false"
             >
                 <span
                     x-show="!navbarOpen"
@@ -51,7 +52,6 @@
             <nav class="absolute top-[110%] right-0 
                         text-right bg-primary py-4 px-10 rounded-lg z-[10]
                         lg:text-left lg:bg-transparent lg:p-0 lg:!block lg:static lg:z-auto"
-
                 x-show="navbarOpen"
                 x-cloak
                 x-transition:enter="transition ease-out duration-300"
