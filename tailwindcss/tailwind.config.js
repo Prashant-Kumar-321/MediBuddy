@@ -23,6 +23,9 @@ module.exports = {
       addUtilities({
         '.translate-topleft':{
           transform: 'translate(calc(-50% - 12rem), calc(-50% - 8rem))',
+        }, 
+        '.translate-smsc-topleft':{
+          transform: 'translate(calc(-50% - 6rem), calc(-50% - 4rem))'
         }
       }); 
     }
