@@ -8,7 +8,6 @@
     display: none !important; 
 }
 
-
 .nav-menu>li>a{
     @apply 
         text-lg font-light
@@ -24,4 +23,24 @@
         lg:after:bg-primary 
         after:origin-left after:scale-x-0 hover:after:scale-x-100
         after:transition after:duration-300;
+}
+
+
+@media  screen and (max-width:768px) {
+    .swiper-slide-button{
+        display: none !important; 
+    }
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+    @apply w-4 h-4 bg-primary;
+}
+
+.slider-wrapper .swiper-slide-button{
+    @apply text-primary
+
+}
+
+.slider-wrapper .swiper-slide-button:hover{
+    @apply text-light-primary
 }
