@@ -3,12 +3,9 @@ const swiper = new Swiper('.slider-wrapper', {
   loop: true,
   spaceBetween: 15, // px
   grabCursor: true,
-
-  // speed: 850,
-
-  // autoplay: {
-  //     delay: 1000,
-  // },
+  autoplay: {
+      delay: 3000,
+  },
 
   pagination: {
     el: '.swiper-pagination',

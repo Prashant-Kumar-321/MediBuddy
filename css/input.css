@@ -44,3 +44,7 @@
 .slider-wrapper .swiper-slide-button:hover{
     @apply text-light-primary
 }
+
+.swiper-slide{
+    height: auto !important;
+}
