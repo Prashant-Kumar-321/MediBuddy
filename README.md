@@ -15,4 +15,4 @@
 # Useful Links:
 
 1. [Live Preview](https://prashant-kumar-321.github.io/MediBuddy/)
-2. [Author Github Profile](https://prashant-kumar-321.github.io/)
+2. [Author Github Profile](https://prashant-kumar-321/)
