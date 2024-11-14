@@ -13,6 +13,9 @@ module.exports = {
       fontFamily:{
         "poppins": ['Poppins', 'sans-serif'],
       }, 
+      transitionProperty: {
+        'max-h': 'max-height', 
+      },
       translate:{
         'topleft': 'translate(calc(-50% - 12rem)), calc(-50% - 8rem)',
       }

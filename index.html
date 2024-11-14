@@ -294,7 +294,7 @@
                                     hover:bg-light-primary hover:text-white  
                                     transition duration-300"
                         >
-                            <i class="fa-solid fa-chevron-down transition duration-300"
+                            <i class="fa-solid fa-chevron-down transition-transform duration-500 ease-linear"
                                 :class="showAnswer&&'rotate-180'"
                             ></i>
                         </span>
@@ -302,8 +302,8 @@
                     
                     <div 
                         aria-label="FA Answr"
-                        class="answer"
-                        :class="showAnswer? 'active': ''"
+                        class="max-h-0 overflow-hidden transition-max-h duration-700 ease-linear"
+                        :class="showAnswer&&'max-h-72 overflow-scroll'"
                         >
                         <p class="p-5 pt-2">
                             Doctor is a general physician with experience in treating a wide range of common health issues, including colds, infections, digestive problems, minor injuries, allergies, and more. For specialized issues, he provides referrals and guidance.
@@ -313,13 +313,13 @@
 
                 <!-- FAQ 2 -->
                 <li x-data="{showAnswer: false}"
-                    class="space-y-5 text-xl border-2 border-primary rounded-lg"
+                    class="text-xl border-2 border-primary rounded-lg"
                 >
                     <div
                         aria-label="FA Qustn" 
                         class="flex justify-between items-center
                             p-3"
-                        :class="showAnswer && 'border-b-2 border-light-primary'"
+                        :class="showAnswer ? 'border-b-2 border-light-primary' : 'delay-700'"
                     >
                         <div>Do I need an appointment, or can I walk in?</div>
                         <span 
@@ -329,37 +329,32 @@
                                     hover:bg-light-primary hover:text-white  
                                     transition duration-300"
                         >
-                        <i  class="fa-solid fa-chevron-down transition duration-300"
+                            <i class="fa-solid fa-chevron-down transition-transform duration-500 ease-linear"
                             :class="showAnswer&&'rotate-180'"
-                        ></i>   
+                            ></i>   
                         </span>
                     </div>
                 
                     <div 
                         aria-label="FA Answr"
-                        class="pl-5 pr-5 pb-5"
-                        x-show="showAnswer"
-                        x-cloak
-                        x-transition:enter="transition ease-in-out duration-300"
-                        x-transition:enter-start="opacity-0 -translate-y-10"
-                        x-transition:enter-end="opacity-100 translate-y-0"
-                        x-transition:leave="transition ease-in-out duration-300"
-                        x-transition:leave-start="opacity-0 -translate-y-40"
-                        x-transition:leave-end="opacity-0 translate-y-0"
+                        class="max-h-0 overflow-hidden transition-max-h duration-700 ease-linear"
+                        :class="showAnswer&&'max-h-72 overflow-scroll'"
                     >
-                        It's recommended to book an appointment in advance to ensure Doctor can dedicate enough time for your consultation. However, walk-ins are welcome based on availability.
+                        <p class="p-5 pt-2">
+                            It's recommended to book an appointment in advance to ensure Doctor can dedicate enough time for your consultation. However, walk-ins are welcome based on availability.
+                        </p>
                     </div>
                 </li>
 
                 <!-- FAQ 3 -->
                 <li x-data="{showAnswer: false}"
-                    class="space-y-5 text-xl border-2 border-primary rounded-lg"
+                    class="text-xl border-2 border-primary rounded-lg"
                 >
                     <div
                         aria-label="FA Qustn" 
                         class="flex justify-between items-center
                             p-3"
-                        :class="showAnswer && 'border-b-2 border-light-primary'"
+                        :class="showAnswer ? 'border-b-2 border-light-primary' : 'delay-700'"
                     >
                         <div> How can I book an appointment with Doctor?</div>
                         <span 
@@ -368,37 +363,32 @@
                                     w-6 h-6 p-5 sm:w-10 sm:h-10 rounded-full cursor-pointer
                                     hover:bg-light-primary hover:text-white  
                                     transition duration-300"
-                        >
-                        <i  class="fa-solid fa-chevron-down transition duration-300"
-                            :class="showAnswer&&'rotate-180'"
-                        ></i>
+                            >
+                            <i class="fa-solid fa-chevron-down transition-transform duration-500 ease-linear"
+                                :class="showAnswer&&'rotate-180'"
+                            ></i>
                         </span>
                     </div>
                 
                     <div 
                         aria-label="FA Answr"
-                        class="pl-5 pr-5 pb-5"
-                        x-show="showAnswer"
-                        x-cloak
-                        x-transition:enter="transition ease-in-out duration-300"
-                        x-transition:enter-start="opacity-0 -translate-y-10"
-                        x-transition:enter-end="opacity-100 translate-y-0"
-                        x-transition:leave="transition ease-in-out duration-300"
-                        x-transition:leave-start="opacity-0 -translate-y-40"
-                        x-transition:leave-end="opacity-0 translate-y-0"
+                        class="max-h-0 overflow-hidden transition-max-h duration-700 ease-linear"
+                        :class="showAnswer&&'max-h-72 overflow-scroll'"
                     >
-                        You can easily book an appointment by calling the clinic directly, visiting the mediBuddy website's appointment page, or through our partner health app.
+                        <p class="p-5 pt-2">
+                            You can easily book an appointment by calling the clinic directly, visiting the mediBuddy website's appointment page, or through our partner health app.
+                        </p>
                     </div>
                 </li>
                 <!-- FAQ 4 -->
                 <li x-data="{showAnswer: false}"
-                    class="space-y-5 text-xl border-2 border-primary rounded-lg"
+                    class="text-xl border-2 border-primary rounded-lg"
                 >
                     <div
                         aria-label="FA Qustn" 
                         class="flex justify-between items-center
                             p-3"
-                        :class="showAnswer && 'border-b-2 border-light-primary'"
+                        :class="showAnswer ? 'border-b-2 border-light-primary' : 'delay-700'"
                     >
                         <div> What should I bring to my first appointment?</div>
                         <span 
@@ -408,36 +398,31 @@
                                     hover:bg-light-primary hover:text-white  
                                     transition duration-300"
                         >
-                        <i class="fa-solid fa-chevron-down transition duration-300"
+                            <i class="fa-solid fa-chevron-down transition-transform duration-500 ease-linear"
                             :class="showAnswer&&'rotate-180'"
-                        ></i>
+                            ></i>
                         </span>
                     </div>
                 
                     <div 
                         aria-label="FA Answr"
-                        class="pl-5 pr-5 pb-5"
-                        x-show="showAnswer"
-                        x-cloak
-                        x-transition:enter="transition ease-in-out duration-300"
-                        x-transition:enter-start="opacity-0 -translate-y-10"
-                        x-transition:enter-end="opacity-100 translate-y-0"
-                        x-transition:leave="transition ease-in-out duration-300"
-                        x-transition:leave-start="opacity-0 -translate-y-40"
-                        x-transition:leave-end="opacity-0 translate-y-0"
+                        class="max-h-0 overflow-hidden transition-max-h duration-700 ease-linear"
+                        :class="showAnswer&&'max-h-72 overflow-scroll'"
                     >
-                        For your first visit, please bring any relevant medical records, a list of medications you are currently taking, and any previous lab reports. This will help Dr. Sharma understand your health background better.
+                        <p class="p-5 pt-2">
+                            For your first visit, please bring any relevant medical records, a list of medications you are currently taking, and any previous lab reports. This will help Dr. Sharma understand your health background better.
+                        </p>
                     </div>
                 </li>
                 <!-- FAQ 5 -->
                 <li x-data="{showAnswer: false}"
-                    class="space-y-5 text-xl border-2 border-primary rounded-lg"
+                    class="text-xl border-2 border-primary rounded-lg"
                 >
                     <div
                         aria-label="FA Qustn" 
                         class="flex justify-between items-center
                             p-3"
-                        :class="showAnswer && 'border-b-2 border-light-primary'"
+                        :class="showAnswer ? 'border-b-2 border-light-primary' : 'delay-700'"
                     >
                         <div> Does Doctor offer telemedicine consultations?</div>
                         <span 
@@ -447,7 +432,7 @@
                                     hover:bg-light-primary hover:text-white  
                                     transition duration-300"
                         >
-                            <i class="fa-solid fa-chevron-down transition duration-300"
+                            <i class="fa-solid fa-chevron-down transition-transform duration-500 ease-linear"
                                 :class="showAnswer&&'rotate-180'"
                             ></i>
                         </span>
@@ -455,28 +440,23 @@
                 
                     <div 
                         aria-label="FA Answr"
-                        class="pl-5 pr-5 pb-5"
-                        x-show="showAnswer"
-                        x-cloak
-                        x-transition:enter="transition ease-in-out duration-300"
-                        x-transition:enter-start="opacity-0 -translate-y-10"
-                        x-transition:enter-end="opacity-100 translate-y-0"
-                        x-transition:leave="transition ease-in-out duration-300"
-                        x-transition:leave-start="opacity-0 -translate-y-40"
-                        x-transition:leave-end="opacity-0 translate-y-0"
+                        class="max-h-0 overflow-hidden transition-max-h duration-700 ease-linear"
+                        :class="showAnswer&&'max-h-72 overflow-scroll'"
                     >
-                        Yes, Doctor offers telemedicine consultations for patients who prefer remote appointments. Simply contact us to schedule a video or phone consultation.
+                        <p class="p-5 pt-2">
+                            Yes, Doctor offers telemedicine consultations for patients who prefer remote appointments. Simply contact us to schedule a video or phone consultation.
+                        </p>
                     </div>
                 </li>
                 <!-- FAQ 6 -->
                 <li x-data="{showAnswer: false}"
-                    class="space-y-5 text-xl border-2 border-primary rounded-lg"
+                    class="text-xl border-2 border-primary rounded-lg"
                 >
                     <div
                         aria-label="FA Qustn" 
                         class="flex justify-between items-center
                             p-3"
-                        :class="showAnswer && 'border-b-2 border-light-primary'"
+                        :class="showAnswer ? 'border-b-2 border-light-primary' : 'delay-700'"
                     >
                         <div> What payment methods are accepted?</div>
                         <span 
@@ -486,25 +466,20 @@
                                     hover:bg-light-primary hover:text-white  
                                     transition duration-300"
                         >
-                        <i class="fa-solid fa-chevron-down transition duration-300"
-                            :class="showAnswer&&'rotate-180'"
-                        ></i>
+                            <i class="fa-solid fa-chevron-down transition-transform duration-500 ease-linear"
+                                :class="showAnswer&&'rotate-180'"
+                            ></i>
                         </span>
                     </div>
                 
                     <div 
                         aria-label="FA Answr"
-                        class="pl-5 pr-5 pb-5"
-                        x-show="showAnswer"
-                        x-cloak
-                        x-transition:enter="transition ease-in-out duration-300"
-                        x-transition:enter-start="opacity-0 -translate-y-10"
-                        x-transition:enter-end="opacity-100 translate-y-0"
-                        x-transition:leave="transition ease-in-out duration-300"
-                        x-transition:leave-start="opacity-0 -translate-y-40"
-                        x-transition:leave-end="opacity-0 translate-y-0"
+                        class="max-h-0 overflow-hidden transition-max-h duration-700 ease-linear"
+                        :class="showAnswer&&'max-h-72 overflow-scroll'"
                     >
-                        We accept various payment methods, including cash, credit/debit cards, and most digital payment platforms. If you have specific insurance coverage, please inquire with us beforehand.
+                        <p class="p-5 pt-2">
+                            We accept various payment methods, including cash, credit/debit cards, and most digital payment platforms. If you have specific insurance coverage, please inquire with us beforehand.
+                        </p>
                     </div>
                 </li>
             </ul>
