@@ -10,7 +10,7 @@
 1. Header with logo navigation menus and call to action button 
 2. Hero section with Hero image with some statistics attached on the right side and some content on left side 
 3. Testimonials with nice horizontal autoplay slide of testimonial cards 
-4. Folding Frequently asked questions(FAQ)
+4. Accordion Frequently asked questions(FAQ)
 
 # Useful Links:
 
