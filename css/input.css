@@ -48,3 +48,18 @@
 .swiper-slide{
     height: auto !important;
 }
+
+.answer{
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 1s ease-out; 
+}
+
+.active{
+    max-height: 300px;
+}
+
+.delay{
+    transition: border 0ms ease-out; 
+    transition-delay: 1.4s;
+}
